@@ -4,7 +4,7 @@
 /* Mobile Layout: 320px */
 /* Wide Mobile Layout: 480px */
 /* =================================== */
-/*  Basic Style 
+/*  Basic Style
 /* =================================== */
 ::-moz-selection {
   /* Code for Firefox */
@@ -2535,7 +2535,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 .single-feature:hover{
   color: #38d7ff;
   background-color: white;
-  box-shadow: 5px 5px 70px 5px rgb(2, 41, 53);
+  box-shadow: 5px 5px 40px 5px rgb(2, 41, 53);
   transition: color, box-shadow, 0.5s;
 }
 
