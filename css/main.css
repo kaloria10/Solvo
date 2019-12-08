@@ -4177,17 +4177,17 @@ hr.style-two {
 }
 
 .profile-picture {
-		border-radius: 100%;
-		overflow: hidden;
-		-webkit-box-sizing: content-box;
-	  -moz-box-sizing: content-box;
-	  box-sizing: border-box;	
+    border-radius: 100%;
+    overflow: hidden;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: border-box;	
 }
 
 .small-profile-picture {
-border: 2px solid #795fff;
-width: 120px;
-height: 120px;
+    border: 2px solid #795fff;
+    width: 120px;
+    height: 120px;
 }
 
 
