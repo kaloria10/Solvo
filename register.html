@@ -77,37 +77,52 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-12 d-flex flex-column">
-					<form>
+					<form action="registration-complete.html">
 						<div class="form-group">
 							<label for="first_name">Imię</label>
-							<input type="text" class="form-control" id="first_name">
+							<input pattern="[A-Za-z]{1,20}" title="Imię nie może zawierać cyfr. Maksymalna długość 20 znaków" type="text" class="form-control" id="first_name" required>
 						</div>
 						<div class="form-group">
 							<label for="last_name">Nazwisko</label>
-							<input type="text" class="form-control" id="last_name">
+							<input pattern="[A-Za-z]{1,25}" title="Nazwisko nie może zawierać cyfr. Maksymalna długość 25 znaków" type="text" class="form-control" id="last_name" required>
 						</div>
 						<div class="form-group">
 							<label for="pass">Hasło</label>
-							<input type="password" class="form-control" id="pass">
+							<input pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" title ="Hasło musi mieć przynajmniej 8 znaków, zawierać przynajmniej jedną dużą i małą literę oraz jedną cyfrę"type="password" class="form-control" id="password" required>
 						</div>
 						<div class="form-group">
 							<label for="pass_repeat">Powtórz hasło</label>
-							<input type="password" class="form-control" id="pass_repeat">
+							<input type="password" class="form-control" id="confirm_password" required>
 						</div>
 						<div class="form-group">
 							<label for="email">E-mail</label>
-							<input type="email" class="form-control" id="email">
+							<input pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" type="email" class="form-control" id="email" required>
 						</div>
 						<div class="form-group">
 							<label for="university">Uczelnia</label>
-							<input type="text" class="form-control" id="university">
+							<input list = "uni" class="form-control" id="university" required>
+							<datalist id = "uni">
+							 <option value ="Uniwersytet Ekonomiczny w Krakowie">
+							 <option value ="Uniwersytet Jagielloński w Krakowie">
+							 <option value ="Uniwersytet Warszawski">
+							 <option value ="Uniwersytet im. Adama Mickiewicza w Poznaniu">
+							 <option value ="Uniwersytet Pedagogiczny im. Komisji Edukacji Narodowej w Krakowie">							 
+							 </datalist>
 						</div>
 						<div class="form-group">
 							<label for="field">Kierunek studiów</label>
-							<input type="text" class="form-control" id="field">
+							<input list="subj" class="form-control" id="field" required>
+							<datalist id = "subj">
+							 <option value ="Informatyka">
+							 <option value ="Ekonomia">
+							 <option value ="Turystyka">
+							 <option value ="Matematyka">
+							 <option value ="Logistyka">							 
+							 </datalist>
 						</div>
+					<input class= "ticker-btn" type = "submit" value = "Zarejestruj się"/>
 					</form>
-					<a href="registration-complete.html"><button class="ticker-btn">Zarejestruj się</button></a>
+					
 				</div>
 			</div>
 		</div>
@@ -158,6 +173,20 @@
 	<script src="js/parallax.min.js"></script>
 	<script src="js/mail-script.js"></script>
 	<script src="js/main.js"></script>
+        <script> var password = document.getElementById("password")
+            , confirm_password = document.getElementById("confirm_password");
+
+             function validatePassword(){
+                if(password.value != confirm_password.value) {
+                 confirm_password.setCustomValidity("Podane hasła są różne");
+              } else {
+                   confirm_password.setCustomValidity('');
+                 }
+               }
+
+                  password.onchange = validatePassword;
+                  confirm_password.onkeyup = validatePassword;
+                   </script>
 </body>
 
 </html>
