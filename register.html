@@ -173,7 +173,20 @@
 	<script src="js/parallax.min.js"></script>
 	<script src="js/mail-script.js"></script>
 	<script src="js/main.js"></script>
-	<script src="js/password.js"></script>
+        <script> var password = document.getElementById("password")
+            , confirm_password = document.getElementById("confirm_password");
+
+             function validatePassword(){
+                if(password.value != confirm_password.value) {
+                 confirm_password.setCustomValidity("Podane hasła są różne");
+              } else {
+                   confirm_password.setCustomValidity('');
+                 }
+               }
+
+                  password.onchange = validatePassword;
+                  confirm_password.onkeyup = validatePassword;
+                   </script>
 </body>
 
 </html>
