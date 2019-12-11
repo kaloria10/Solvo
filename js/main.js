@@ -63,6 +63,10 @@ $(document).ready(function(){
     $('body').append('<div id="mobile-body-overly"></div>');
     $('#mobile-nav').find('.menu-has-children').prepend('<i class="lnr lnr-chevron-down"></i>');
 
+    $($mobile_nav).find('> ul > li > a').attr({
+      'style': 'display: block !important'
+    })
+
     $(document).on('click', '.menu-has-children i', function(e) {
       $(this).next().toggleClass('menu-item-active');
       $(this).nextAll('ul').eq(0).slideToggle();
@@ -73,6 +77,7 @@ $(document).ready(function(){
       $('body').toggleClass('mobile-nav-active');
       $('#mobile-nav-toggle i').toggleClass('lnr-cross lnr-menu');
       $('#mobile-body-overly').toggle();
+    
     });
 
     $(document).click(function(e) {
