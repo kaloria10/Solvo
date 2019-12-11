@@ -2386,6 +2386,15 @@ body.mobile-nav-active #mobile-nav-toggle {
   opacity: 0.85;
 }
 
+.banner-area + .post-area .post-list{
+  max-width: 100%;
+  flex: 1;
+}
+
+.banner-area + .post-area .sidebar {
+  display: none;
+}
+
 .banner-content {
   margin-top: -90px;
   text-align: center;
