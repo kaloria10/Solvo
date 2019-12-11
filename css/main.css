@@ -2112,7 +2112,7 @@ h1, h2, h3, h4, h5, h6 {
 #mobile-nav {
   position: fixed;
   top: 0;
-  padding-top: 70px;
+  margin-top: 65px;
   bottom: 0;
   z-index: 998;
   background: rgba(0, 0, 0, 0.8);
@@ -2124,7 +2124,7 @@ h1, h2, h3, h4, h5, h6 {
 
 @media screen and (min-width: 768px) and (max-width: 960px) {
   #mobile-nav {
-    padding-top: 90px;
+    margin-top: 80px;
   }
 }
 
@@ -2190,6 +2190,14 @@ h1, h2, h3, h4, h5, h6 {
   position: fixed;
   background: rgba(0, 0, 0, 0.7);
   display: none;
+  margin-top: 65px;
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 960px) {
+  #mobile-body-overly {
+    padding-top: 90px;
+  }
 }
 
 /* Mobile Nav body classes */
