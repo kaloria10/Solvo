@@ -2638,6 +2638,10 @@ body.mobile-nav-active #mobile-nav-toggle {
   border: 1px solid #49e4fa;
 }
 
+.single-fcat img {
+  width:60px;
+}
+
 @media (max-width: 960px) {
   .single-fcat {
     margin-bottom: 30px;
