@@ -1923,7 +1923,7 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 28px;
   }
   #header #logo img {
-    max-height: 40px;
+    transform: scale(0.8);
   }
 }
 
@@ -2078,7 +2078,7 @@ h1, h2, h3, h4, h5, h6 {
   position: fixed;
   right: 15px;
   z-index: 999;
-  top: 16px;
+  top: 30px;
   border: 0;
   background: none;
   font-size: 24px;
@@ -2106,7 +2106,8 @@ h1, h2, h3, h4, h5, h6 {
 #mobile-nav {
   position: fixed;
   top: 0;
-  padding-top: 18px;
+  margin-top: 65px;
+  padding-top: 20px;
   bottom: 0;
   z-index: 998;
   background: rgba(0, 0, 0, 0.8);
@@ -2114,6 +2115,13 @@ h1, h2, h3, h4, h5, h6 {
   width: 260px;
   overflow-y: auto;
   transition: 0.4s;
+}
+
+@media screen and (min-width: 768px) and (max-width: 960px) {
+  #mobile-nav {
+    margin-top: 80px;
+    padding-top: 0;
+  }
 }
 
 #mobile-nav ul {
@@ -2178,6 +2186,14 @@ h1, h2, h3, h4, h5, h6 {
   position: fixed;
   background: rgba(0, 0, 0, 0.7);
   display: none;
+  margin-top: 65px;
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 960px) {
+  #mobile-body-overly {
+    padding-top: 90px;
+  }
 }
 
 /* Mobile Nav body classes */
