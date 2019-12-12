@@ -2578,6 +2578,14 @@ body.mobile-nav-active #mobile-nav-toggle {
   min-height: 100%;
 }
 
+.single-feature a {
+  color: #777777;
+}
+
+.single-feature:hover a {
+  color: #49e4fa;
+}
+
 .single-feature p {
   margin-bottom: 0;
   margin-top: 20px;
