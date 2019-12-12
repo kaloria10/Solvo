@@ -267,8 +267,35 @@ $(document).ready(function(){
 
 
 
+        checkIfLogged();
 
-
-
-
+        if (document.querySelector('form[name=loginForm]')) {
+          document.querySelector('form[name=loginForm]').addEventListener('submit', () =>{
+            const mail = document.forms["loginForm"]["email"].value;
+            saveLoggedIn(mail);
+          });
+        }
  });
+
+
+//  Save logged in user
+function saveLoggedIn(email){
+  localStorage.setItem('email', email);
+}
+
+// Log out
+function logOutUser(){
+  localStorage.removeItem('email');
+}
+
+function checkIfLogged(){
+  if(localStorage.getItem('email')){
+    document.querySelector('#log-btn').innerHTML = 'Wyloguj';
+    document.querySelector('#log-btn').addEventListener('click', logOutUser);
+  }else{
+    document.querySelector('#log-btn').innerHTML = 'Zaloguj';
+  }
+}
+
+
+
