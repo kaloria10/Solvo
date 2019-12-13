@@ -4542,7 +4542,6 @@ hr.style-two {
   vertical-align: middle;
   text-align: center;
   display: inline-block;
-  border-radius: 3rem;
   color: #8a8a8a;
   transition: all ease 0.4s;
 }
@@ -4607,6 +4606,20 @@ hr.style-two {
 .heart-size {
   font-size: 26px;
 }
+
+figcaption {
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  color: #222222;
+  line-height: 1.1em;
+  width: 100px;
+  margin-top: 4px;
+}
+
+figcaption p {
+  text-align: center;
+}
+
 /*
 ################
                End Blog Details  Page style
