@@ -1,428 +1,415 @@
-	<!DOCTYPE html>
-	<html lang="zxx" class="no-js">
-	<head>
-		<!-- Mobile Specific Meta -->
-		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-		<!-- Favicon-->
-		<link rel="shortcut icon" href="img/solvo_blue_fav.png">
-		<!-- Author Meta -->
-		<meta name="author" content="codepixer">
-		<!-- Meta Description -->
-		<meta name="description" content="">
-		<!-- Meta Keyword -->
-		<meta name="keywords" content="">
-		<!-- meta character set -->
-		<meta charset="UTF-8">
-		<!-- Site Title -->
-		<title>Solvo</title>
+<!DOCTYPE html>
+<html lang="zxx" class="no-js">
+<head>
+	<!-- Mobile Specific Meta -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Favicon-->
+	<link rel="shortcut icon" href="img/solvo_blue_fav.png">
+	<!-- Author Meta -->
+	<meta name="author" content="codepixer">
+	<!-- Meta Description -->
+	<meta name="description" content="">
+	<!-- Meta Keyword -->
+	<meta name="keywords" content="">
+	<!-- meta character set -->
+	<meta charset="UTF-8">
+	<!-- Site Title -->
+	<title>Solvo</title>
 
-		<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet"> 
-			<!--
-			CSS
-			============================================= -->
-			<link rel="stylesheet" href="css/linearicons.css">
-			<link rel="stylesheet" href="css/font-awesome.min.css">
-			<link rel="stylesheet" href="css/bootstrap.css">
-			<link rel="stylesheet" href="css/magnific-popup.css">
-			<link rel="stylesheet" href="css/nice-select.css">					
-			<link rel="stylesheet" href="css/animate.min.css">
-			<link rel="stylesheet" href="css/owl.carousel.css">
-			<link rel="stylesheet" href="css/main.css">
-		</head>
-		<body>
+	<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet"> 
+		<!--
+		CSS
+		============================================= -->
+		<link rel="stylesheet" href="css/linearicons.css">
+		<link rel="stylesheet" href="css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/bootstrap.css">
+		<link rel="stylesheet" href="css/magnific-popup.css">
+		<link rel="stylesheet" href="css/nice-select.css">					
+		<link rel="stylesheet" href="css/animate.min.css">
+		<link rel="stylesheet" href="css/owl.carousel.css">
+		<link rel="stylesheet" href="css/main.css">
+	</head>
+	<body>
 
-			  <header id="header" id="home">
-			    <div class="container">
-			    	<div class="row align-items-center justify-content-between d-flex">
-				      <div id="logo">
-				        <a href="index.html"><img src="img/solvo_logo_blue.png" width="120" height="54" alt="" title="" /></a>
-				      </div>
-				      <nav id="nav-menu-container">
-				        <ul class="nav-menu">
-				          <li class="menu-active"><a href="index.html">Strona głowna</a></li>
-				          <li><a href="category.html">Kategorie</a></li>
-							<li><a href="about-us.html">O nas</a></li>
-				          <li><a href="contact.html">Kontakt</a></li>
+		  <header id="header" id="home">
+			<div class="container">
+				<div class="row align-items-center justify-content-between d-flex">
+				  <div id="logo">
+					<a href="index.html"><img src="img/solvo_logo_blue.png" width="120" height="54" alt="" title="" /></a>
+				  </div>
+				  <nav id="nav-menu-container">
+					<ul class="nav-menu">
+					  <li class="menu-active"><a href="index.html">Strona głowna</a></li>
+					  <li><a href="category.html">Kategorie</a></li>
+						<li><a href="about-us.html">O nas</a></li>
+					  <li><a href="contact.html">Kontakt</a></li>
 
-				          <li><a class="ticker-btn" href="log_in.html">Zaloguj</a></li>
-				          <li><a class="ticker-btn" href="log_out.html">Wyloguj</a></li>				          				          
-				        </ul>
-				      </nav><!-- #nav-menu-container -->		    		
-			    	</div>
-			    </div>
-			  </header><!-- #header -->
-
-
-			<!-- start banner Area -->
-			<section class="banner-area relative" id="home">	
-				<div class="overlay overlay-bg"></div>
-				<div class="container">
-					<div class="row fullscreen d-flex align-items-center justify-content-center">
-						<div class="banner-content col-lg-12">
-							<h1 class="text-white">
-								<span>150+</span> Zadań do rozwiązania opublikowanych w tym miesiącu				
-							</h1>	
-							<form action="search.html" class="serach-form-area">
-								<div class="row justify-content-center form-wrap">
-									<div class="col-lg-4 form-cols">
-										<input type="text" class="form-control" name="search" placeholder="Czego szukasz?">
-									</div>
-									<div class="col-lg-3 form-cols">
-										<div class="default-select" id="default-selects">
-											<input type="text" class="form-control" name="search" placeholder="Słowa kluczowe">
-										</div>
-									</div>
-									<div class="col-lg-3 form-cols">
-										<div class="default-select" id="default-selects2">
-											<select>
-												<option value="1">Wszystkie kategorie</option>
-												<option value="2">Informatyka</option>
-												<option value="3">Turystyka</option>
-												<option value="4">Pomoc techniczna</option>
-												<option value="5">Ekonomia</option>
-												<option value="6">Forum</option>
-												<option value="7">Centrum językowe</option>
-											</select>
-										</div>										
-									</div>
-									<div class="col-lg-2 form-cols">
-									    <button type="button" class="btn btn-info">
-									      <span class="lnr lnr-magnifier"></span> Szukaj
-									    </button>
-									</div>								
-								</div>
-							</form>
-						</div>											
-					</div>
+					  <li><a class="ticker-btn" id="log-btn" href="log_in.html">Zaloguj</a></li>
+					  <!-- <li><a class="ticker-btn" href="log_out.html">Wyloguj</a></li>				          				           -->
+					</ul>
+				  </nav><!-- #nav-menu-container -->		    		
 				</div>
-			</section>
-			<!-- End banner Area -->	
+			</div>
+		  </header><!-- #header -->
 
-			<!-- Start features Area -->
-			<section class="features-area">
-				<div class="container">
-					<div class="row">
-						<div class="col-lg-3 col-md-6">
-							<div class="single-feature">
-								<h4>Szukaj</h4>
-								<img src="img/search.png" class="img-fluid" alt="lupa">
-								<p>
-									Szukaj i znajduj rozwiązania spośrod wszystkich uczelni w Polsce!
-								</p>
+
+		<!-- start banner Area -->
+		<section class="banner-area relative" id="home">	
+			<div class="overlay overlay-bg"></div>
+			<div class="container">
+				<div class="row fullscreen d-flex align-items-center justify-content-center">
+					<div class="banner-content col-lg-12">
+						<h1 class="text-white">
+							<span>150+</span> Zadań do rozwiązania opublikowanych w tym miesiącu				
+						</h1>	
+						<form action="search.html" class="serach-form-area">
+							<div class="row justify-content-center form-wrap">
+								<div class="col-lg-4 form-cols">
+									<input type="text" class="form-control" name="search" placeholder="Czego szukasz?">
+								</div>
+								<div class="col-lg-3 form-cols">
+									<div class="default-select" id="default-selects">
+										<input type="text" class="form-control" name="search" placeholder="Słowa kluczowe">
+									</div>
+								</div>
+								<div class="col-lg-3 form-cols">
+									<div class="default-select" id="default-selects2">
+										<select>
+											<option value="1">Wszystkie kategorie</option>
+											<option value="2">Ekonomia</option>
+											<option value="3">Medycyna</option>
+											<option value="4">Psychologia</option>
+											<option value="5">Nauki humanistyczne</option>
+											<option value="6">Nauki ścisłe</option>
+											<option value="7">Nauki techniczne</option>
+										</select>
+									</div>										
+								</div>
+								<div class="col-lg-2 form-cols">
+									<button type="button" class="btn btn-info">
+									  <span class="lnr lnr-magnifier"></span> Szukaj
+									</button>
+								</div>								
 							</div>
+						</form>
+					</div>											
+				</div>
+			</div>
+		</section>
+		<!-- End banner Area -->	
+
+		<!-- Start features Area -->
+		<section class="features-area">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-3 col-md-6">
+						<div class="single-feature">
+							<h4>Szukaj</h4>
+							<img src="img/search.png" class="img-fluid" alt="lupa">
+							<p>
+								Szukaj i znajduj rozwiązania spośrod wszystkich uczelni w Polsce!
+							</p>
 						</div>
-						<div class="col-lg-3 col-md-6">
-							<div class="single-feature">
-							<a href="help.html">
-								<h4>Rozwiązuj</h4>
-								<img src="img/solving-problems.png" class="img-fluid" alt="rozwiązywanie problemów">
-								<p>
-									Rozwiązuj problemy innych.
-								</p>
-								</a>
-							</div>
-						</div>
-						<div class="col-lg-3 col-md-6">
-							<div class="single-feature">
-								<h4>Pracownicy</h4>
-								<img src="img/employees.png" class="img-fluid" alt="pracownicy">
-								<p>
-									Tu znajdziesz swojego przyszłego pracownika.
-								</p>
-							</div>
-						</div>
-						<div class="col-lg-3 col-md-6">
-							<div class="single-feature">
-								<h4>Powiadomienia</h4>
-								<img src="img/notifications.png" class="img-fluid" alt="powiadomienia">
-								<p>
-									Bądź nabieżąco ze wszystkimi rozwiązaniami!
-								</p>
-							</div>
-						</div>																		
 					</div>
-				</div>	
-			</section>
-
-			<!-- End popular-post Area -->
-			
-			<!-- Start feature-cat Area -->
-			<section class="feature-cat-area pt-100" id="category">
-				<div class="container">
-					<div class="row d-flex justify-content-center">
-						<div class="menu-content pb-60 col-lg-10">
-							<div class="title text-center">
-								<h1 class="mb-10">Kategorie problemów do rozwiązania</h1>
-								<p>Mamy głęboką nadzieję że tu znajdziesz odpowiedź na nurtujące Cię pytanie.</p>
-							</div>
+					<div class="col-lg-3 col-md-6">
+						<div class="single-feature">
+						<a href="help.html">
+							<h4>Rozwiązuj</h4>
+							<img src="img/solving-problems.png" class="img-fluid" alt="rozwiązywanie problemów">
+							<p>
+								Rozwiązuj problemy innych.
+							</p>
+							</a>
 						</div>
+					</div>
+					<div class="col-lg-3 col-md-6">
+						<div class="single-feature">
+							<h4>Pracownicy</h4>
+							<img src="img/employees.png" class="img-fluid" alt="pracownicy">
+							<p>
+								Tu znajdziesz swojego przyszłego pracownika.
+							</p>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-6">
+						<div class="single-feature">
+							<h4>Notyfikacje</h4>
+							<img src="img/notifications.png" class="img-fluid" alt="powiadomienia">
+							<p>
+								Bądź nabieżąco ze wszystkimi rozwiązaniami!
+							</p>
+						</div>
+					</div>																		
+				</div>
+			</div>	
+		</section>
+
+		<!-- End popular-post Area -->
+		
+		<!-- Start feature-cat Area -->
+		<section class="feature-cat-area pt-100" id="category">
+			<div class="container">
+				<div class="row d-flex justify-content-center">
+					<div class="menu-content pb-60 col-lg-10">
+						<div class="title text-center">
+							<h1 class="mb-10">Kategorie problemów do rozwiązania</h1>
+							<p>Mamy głęboką nadzieję że tu znajdziesz odpowiedź na nurtujące Cię pytanie.</p>
+						</div>
+					</div>
+				</div>						
+				<div class="row">
+					<div class="col-lg-2 col-md-4 col-sm-6">
+						<div class="single-fcat">
+							<a href="category.html">
+								<img src="img/catico-01.svg" alt="">
+							</a>
+							<p>Ekonomia</p>
+						</div>
+					</div>
+					<div class="col-lg-2 col-md-4 col-sm-6">
+						<div class="single-fcat">
+							<a href="category.html">
+								<img src="img/catico-02.svg" alt="">
+							</a>
+							<p>Medycyna </p>
+						</div>
+					</div>
+					<div class="col-lg-2 col-md-4 col-sm-6">
+						<div class="single-fcat">
+							<a href="category.html">
+								<img src="img/catico-03.svg" alt="">
+							</a>
+							<p>Psychologia</p>
+						</div>
+					</div>
+					<div class="col-lg-2 col-md-4 col-sm-6">
+						<div class="single-fcat">
+							<a href="category.html">
+								<img src="img/catico-05.svg" alt="">
+							</a>
+							<p>Nauki humanistyczne</p>
+						</div>
+					</div>
+					<div class="col-lg-2 col-md-4 col-sm-6">
+						<div class="single-fcat">
+							<a href="category.html">
+								<img src="img/catico-06.svg" alt="">
+							</a>
+							<p>Nauki ścisłe</p>
+						</div>			
 					</div>						
-					<div class="row">
-						<div class="col-lg-2 col-md-4 col-sm-6">
-							<div class="single-fcat">
-								<a href="category.html">
-									<img src="img/o1.png" alt="">
-								</a>
-								<p>Informatyka</p>
-							</div>
+					<div class="col-lg-2 col-md-4 col-sm-6">
+						<div class="single-fcat">
+							<a href="category.html">
+								<img src="img/catico-04.svg" alt="">
+							</a>
+							<p>Nauki techniczne</p>
 						</div>
-						<div class="col-lg-2 col-md-4 col-sm-6">
-							<div class="single-fcat">
-								<a href="category.html">
-									<img src="img/o2.png" alt="">
-								</a>
-								<p>Turystyka</p>
-							</div>
-						</div>
-						<div class="col-lg-2 col-md-4 col-sm-6">
-							<div class="single-fcat">
-								<a href="category.html">
-									<img src="img/o3.png" alt="">
-								</a>
-								<p>Pomoc techniczna</p>
-							</div>
-						</div>
-						<div class="col-lg-2 col-md-4 col-sm-6">
-							<div class="single-fcat">
-								<a href="category.html">
-									<img src="img/o4.png" alt="">
-								</a>
-								<p>Ekonomia</p>
-							</div>
-						</div>
-						<div class="col-lg-2 col-md-4 col-sm-6">
-							<div class="single-fcat">
-								<a href="category.html">
-									<img src="img/o5.png" alt="">
-								</a>
-								<p>Forum</p>
-							</div>
-						</div>
-						<div class="col-lg-2 col-md-4 col-sm-6">
-							<div class="single-fcat">
-								<a href="category.html">
-									<img src="img/o6.png" alt="">
-								</a>
-								<p>Centrum językowe</p>
-							</div>			
-						</div>																											
-					</div>
-				</div>	
-			</section>
-			<!-- End feature-cat Area -->
-			
-			<!-- Start post Area -->
-			<section class="post-area section-gap">
-				<div class="container">
-					<div class="row justify-content-center d-flex">
-						<div class="col-lg-8 post-list">
-							<ul class="cat-list">
-								<li><a href="#">Najnowsze</a></li>
-								<li><a href="#">Najciekawsze</a></li>
-								<li><a href="#">Najlepiej oceniane</a></li>
-							</ul>
-							<div class="single-post d-flex flex-row">
-								<div class="thumb">
-									<img src="img/post.png" alt="">
-									<ul class="tags">
-										<li>
-											<a href="#">kategoria</a>
-										</li>
-										<li>
-											<a href="#">kategoria</a>
-										</li>
-										<li>
-											<a href="#">kategoria</a>
-										</li>
-						
-									</ul>
-								</div>
-								<div class="details">
-									<div class="title d-flex flex-row justify-content-between">
-										<div class="titles">
-											<a href="single.html"><h4>Tytuł problemu</h4></a>
-										</div>
-										<ul class="btns">
-											<li><a href="#"><span class="lnr lnr-heart"></span></a></li>
-											<li><a href="#">Odpowiedź</a></li>
-										</ul>
-									</div>
-									<p>
-										Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod temporinc ididunt ut dolore magna aliqua.
-									</p>
-								</div>
-							</div>
-							<div class="single-post d-flex flex-row">
-								<div class="thumb">
-									<img src="img/post.png" alt="">
-									<ul class="tags">
-										<li>
-											<a href="#">kategoria</a>
-										</li>
-										<li>
-											<a href="#">kategoria</a>
-										</li>
-										<li>
-											<a href="#">kategoria</a>
-										</li>
-									</ul>
-								</div>
-								<div class="details">
-									<div class="title d-flex flex-row justify-content-between">
-										<div class="titles">
-											<a href="single.html"><h4>Tytuł problemu</h4></a>
-										</div>
-										<ul class="btns">
-											<li><a href="#"><span class="lnr lnr-heart"></span></a></li>
-											<li><a href="#">Odpowiedz</a></li>
-										</ul>
-									</div>
-									<p>
-										Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod temporinc ididunt ut dolore magna aliqua.
-									</p>
-								</div>
-							</div>
-							<div class="single-post d-flex flex-row">
-								<div class="thumb">
-									<img src="img/post.png" alt="">
-									<ul class="tags">
-										<li>
-											<a href="#">kategoria</a>
-										</li>
-										<li>
-											<a href="#">kategoria</a>
-										</li>
-										<li>
-											<a href="#">kategoria</a>
-										</li>
-									</ul>
-								</div>
-								<div class="details">
-									<div class="title d-flex flex-row justify-content-between">
-										<div class="titles">
-											<a href="single.html"><h4>Tytuł problemu</h4></a>
-										</div>
-										<ul class="btns">
-											<li><a href="#"><span class="lnr lnr-heart"></span></a></li>
-											<li><a href="#">Odpowiedz</a></li>
-										</ul>
-									</div>
-									<p>
-										Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod temporinc ididunt ut dolore magna aliqua.
-									</p>
-								</div>
-							</div>
-
-							
-							<a class="text-uppercase loadmore-btn btn-block mx-auto d-block" href="category.html">Pokaż więcej problemow do rozwiązania</a>
-
-						</div>
-						<div class="col-lg-4 sidebar">
-							<div class="single-slidebar">
-								<h4>Kategorie pytań</h4>
-								<ul class="cat-list">
-									<li><a class="justify-content-between d-flex" href="category.html"><p>Informatyka</p><span>37</span></a></li>
-									<li><a class="justify-content-between d-flex" href="category.html"><p>Ekonomia</p><span>57</span></a></li>
-									<li><a class="justify-content-between d-flex" href="category.html"><p>Turystyka</p><span>33</span></a></li>
-									<li><a class="justify-content-between d-flex" href="category.html"><p>Centrum językowe</p><span>36</span></a></li>
-									<li><a class="justify-content-between d-flex" href="category.html"><p>Zarządzanie</p><span>47</span></a></li>
-									<li><a class="justify-content-between d-flex" href="category.html"><p>Finanse</p><span>27</span></a></li>
-									<li><a class="justify-content-between d-flex" href="category.html"><p>Rachunkowość</p><span>17</span></a></li>
+					</div>																					
+				</div>
+			</div>	
+		</section>
+		<!-- End feature-cat Area -->
+		
+		<!-- Start post Area -->
+		<section class="post-area section-gap">
+			<div class="container">
+				<div class="row justify-content-center d-flex">
+					<div class="col-lg-8 post-list">
+						<ul class="cat-list">
+							<li><a href="#">Najnowsze</a></li>
+							<li><a href="#">Najciekawsze</a></li>
+							<li><a href="#">Najlepiej oceniane</a></li>
+						</ul>
+						<div class="single-post d-flex flex-row">
+							<div class="thumb">
+								<img src="img/post.png" alt="">
+								<ul class="tags">
+									<li>
+										<a href="#">kategoria</a>
+									</li>
+									<li>
+										<a href="#">kategoria</a>
+									</li>
+									<li>
+										<a href="#">kategoria</a>
+									</li>
+					
 								</ul>
 							</div>
-
-							<div class="single-slidebar">
-								<h4>Najwyżej oceniane rozwiązania</h4>
-								<div class="active-relatedjob-carusel">
-									<div class="single-rated">
-										<img class="img-fluid" src="img/r1.jpg" alt="">
-										<a href="single.html"><h4>Tytuł</h4></a>
-										<p>
-											Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod temporinc ididunt ut dolore magna aliqua.
-										</p>
-										<a href="#" class="btns text-uppercase">Odpowiedz</a>
+							<div class="details">
+								<div class="title d-flex flex-row justify-content-between">
+									<div class="titles">
+										<a href="single.html"><h4>Tytuł problemu</h4></a>
 									</div>
-									<div class="single-rated">
-										<img class="img-fluid" src="img/r1.jpg" alt="">
-										<a href="single.html"><h4>Tytuł</h4></a>
-										<p>
-											Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod temporinc ididunt ut dolore magna aliqua.
-										</p>
-										<a href="#" class="btns text-uppercase">Odpowiedz</a>
-									</div>
-									<div class="single-rated">
-										<img class="img-fluid" src="img/r1.jpg" alt="">
-										<a href="single.html"><h4>Tytuł</h4></a>
-										<p>
-											Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod temporinc ididunt ut dolore magna aliqua.
-										</p>
-										<a href="#" class="btns text-uppercase">Odpowiedź</a>
-									</div>																		
+									<ul class="btns">
+										<li><a href="#"><span class="lnr lnr-heart"></span></a></li>
+										<li><a href="#">Odpowiedź</a></li>
+									</ul>
 								</div>
+								<p>
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod temporinc ididunt ut dolore magna aliqua.
+								</p>
 							</div>
 						</div>
+						<div class="single-post d-flex flex-row">
+							<div class="thumb">
+								<img src="img/post.png" alt="">
+								<ul class="tags">
+									<li>
+										<a href="#">kategoria</a>
+									</li>
+									<li>
+										<a href="#">kategoria</a>
+									</li>
+									<li>
+										<a href="#">kategoria</a>
+									</li>
+								</ul>
+							</div>
+							<div class="details">
+								<div class="title d-flex flex-row justify-content-between">
+									<div class="titles">
+										<a href="single.html"><h4>Tytuł problemu</h4></a>
+									</div>
+									<ul class="btns">
+										<li><a href="#"><span class="lnr lnr-heart"></span></a></li>
+										<li><a href="#">Odpowiedz</a></li>
+									</ul>
+								</div>
+								<p>
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod temporinc ididunt ut dolore magna aliqua.
+								</p>
+							</div>
+						</div>
+						<div class="single-post d-flex flex-row">
+							<div class="thumb">
+								<img src="img/post.png" alt="">
+								<ul class="tags">
+									<li>
+										<a href="#">kategoria</a>
+									</li>
+									<li>
+										<a href="#">kategoria</a>
+									</li>
+									<li>
+										<a href="#">kategoria</a>
+									</li>
+								</ul>
+							</div>
+							<div class="details">
+								<div class="title d-flex flex-row justify-content-between">
+									<div class="titles">
+										<a href="single.html"><h4>Tytuł problemu</h4></a>
+									</div>
+									<ul class="btns">
+										<li><a href="#"><span class="lnr lnr-heart"></span></a></li>
+										<li><a href="#">Odpowiedz</a></li>
+									</ul>
+								</div>
+								<p>
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod temporinc ididunt ut dolore magna aliqua.
+								</p>
+							</div>
+						</div>
+
+						
+						<a class="text-uppercase loadmore-btn btn-block mx-auto d-block" href="category.html">Pokaż więcej problemow do rozwiązania</a>
+
 					</div>
-				</div>	
-			</section>
-			<!-- End post Area -->
-				
-
-			<!-- Start callto-action Area -->
-			<section class="callto-action-area section-gap" id="join">
-				<div class="container">
-					<div class="row d-flex justify-content-center">
-						<div class="menu-content col-lg-9">
-							<div class="title text-center">
-								<h1 class="mb-10 text-white">Bez wahania dołącz do nas już dziś!</h1>
-								<p class="text-white">Zarejestruj się, aby dodawać oraz pomagać innym rozwiązywać ich problemy! Możesz także przeglądać aktualnie dodane rozwiązania bez rejestracji!</p>
-								<a class="primary-btn" href="register.html">Zarejestruj się!</a>
-								<a class="primary-btn" href="./category.html">Przeglądaj!</a>
+					<div class="col-lg-4 sidebar">
+						<div class="single-slidebar">
+							<h4>Najwyżej oceniane rozwiązania</h4>
+							<div class="active-relatedjob-carusel">
+								<div class="single-rated">
+									<img class="img-fluid" src="img/r1.jpg" alt="">
+									<a href="single.html"><h4>Tytuł</h4></a>
+									<p>
+										Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod temporinc ididunt ut dolore magna aliqua.
+									</p>
+									<a href="#" class="btns text-uppercase">Odpowiedz</a>
+								</div>
+								<div class="single-rated">
+									<img class="img-fluid" src="img/r1.jpg" alt="">
+									<a href="single.html"><h4>Tytuł</h4></a>
+									<p>
+										Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod temporinc ididunt ut dolore magna aliqua.
+									</p>
+									<a href="#" class="btns text-uppercase">Odpowiedz</a>
+								</div>
+								<div class="single-rated">
+									<img class="img-fluid" src="img/r1.jpg" alt="">
+									<a href="single.html"><h4>Tytuł</h4></a>
+									<p>
+										Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod temporinc ididunt ut dolore magna aliqua.
+									</p>
+									<a href="#" class="btns text-uppercase">Odpowiedź</a>
+								</div>																		
 							</div>
-						</div>
-					</div>	
-				</div>	
-			</section>
-			<!-- End calto-action Area -->
-
-			<!-- start footer Area -->		
-			<footer class="footer-area section-gap">
-				<div class="container">
-					
-
-					<div class="row footer-bottom d-flex justify-content-between">
-						<p class="col-lg-8 col-sm-12 footer-text m-0 text-white">
-							<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">UEK Students KrDZis3011/3012</a>
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-						</p>
-						<div class="col-lg-4 col-sm-12 footer-social">
-							<a href="#"><i class="fa fa-facebook"></i></a>
-							<a href="#"><i class="fa fa-twitter"></i></a>
-							<a href="#"><i class="fa fa-dribbble"></i></a>
-							<a href="#"><i class="fa fa-behance"></i></a>
 						</div>
 					</div>
 				</div>
-			</footer>
-			<!-- End footer Area -->		
+			</div>	
+		</section>
+		<!-- End post Area -->
+			
 
-			<script src="js/vendor/jquery-2.2.4.min.js"></script>
-			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-			<script src="js/vendor/bootstrap.min.js"></script>			
-			<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhOdIF3Y9382fqJYt5I_sswSrEw5eihAA"></script>
-  			<script src="js/easing.min.js"></script>			
-			<script src="js/hoverIntent.js"></script>
-			<script src="js/superfish.min.js"></script>	
-			<script src="js/jquery.ajaxchimp.min.js"></script>
-			<script src="js/jquery.magnific-popup.min.js"></script>	
-			<script src="js/owl.carousel.min.js"></script>			
-			<script src="js/jquery.sticky.js"></script>
-			<script src="js/jquery.nice-select.min.js"></script>			
-			<script src="js/parallax.min.js"></script>		
-			<script src="js/mail-script.js"></script>	
-			<script src="js/main.js"></script>	
-		</body>
-	</html>
+		<!-- Start callto-action Area -->
+		<section class="callto-action-area section-gap" id="join">
+			<div class="container">
+				<div class="row d-flex justify-content-center">
+					<div class="menu-content col-lg-9">
+						<div class="title text-center">
+							<h1 class="mb-10 text-white">Bez wahania dołącz do nas już dziś!</h1>
+							<p class="text-white">Zarejestruj się, aby dodawać oraz pomagać innym rozwiązywać ich problemy! Możesz także przeglądać aktualnie dodane rozwiązania bez rejestracji!</p>
+							<a class="primary-btn" href="register.html">Zarejestruj się!</a>
+							<a class="primary-btn" href="./category.html">Przeglądaj!</a>
+						</div>
+					</div>
+				</div>	
+			</div>	
+		</section>
+		<!-- End calto-action Area -->
+
+		<!-- start footer Area -->		
+		<footer class="footer-area section-gap">
+			<div class="container">
+				
+
+				<div class="row footer-bottom d-flex justify-content-between">
+					<p class="col-lg-8 col-sm-12 footer-text m-0 text-white">
+						<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">UEK Students KrDZis3011/3012</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+					</p>
+					<div class="col-lg-4 col-sm-12 footer-social">
+						<a href="#"><i class="fa fa-facebook"></i></a>
+						<a href="#"><i class="fa fa-twitter"></i></a>
+						<a href="#"><i class="fa fa-dribbble"></i></a>
+						<a href="#"><i class="fa fa-behance"></i></a>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- End footer Area -->		
+
+		<script src="js/vendor/jquery-2.2.4.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+		<script src="js/vendor/bootstrap.min.js"></script>			
+		<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhOdIF3Y9382fqJYt5I_sswSrEw5eihAA"></script>
+		  <script src="js/easing.min.js"></script>			
+		<script src="js/hoverIntent.js"></script>
+		<script src="js/superfish.min.js"></script>	
+		<script src="js/jquery.ajaxchimp.min.js"></script>
+		<script src="js/jquery.magnific-popup.min.js"></script>	
+		<script src="js/owl.carousel.min.js"></script>			
+		<script src="js/jquery.sticky.js"></script>
+		<script src="js/jquery.nice-select.min.js"></script>			
+		<script src="js/parallax.min.js"></script>		
+		<script src="js/mail-script.js"></script>	
+		<script src="js/main.js"></script>	
+	</body>
+</html>
 
 
 

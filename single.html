@@ -58,8 +58,8 @@
               <li><a href="about-us.html">O nas</a></li>
               <li><a href="contact.html">Kontakt</a></li>
 
-              <li><a class="ticker-btn" href="log_in.html">Zaloguj</a></li>
-              <li><a class="ticker-btn" href="log_out.html">Wyloguj</a></li>
+              <li><a class="ticker-btn" id="log-btn" href="log_in.html">Zaloguj</a></li>
+              <!-- <li><a class="ticker-btn" href="log_out.html">Wyloguj</a></li> -->
             </ul>
           </nav>
           <!-- #nav-menu-container -->
@@ -98,11 +98,14 @@
             <div class="single-post d-flex flex-row">
               <div class="thumb">
                 <a class="avatar" href="#">
-                  <img
-                    src="img/avatar_user.jpg"
-                    width="100"
-                    alt="Profile Avatar"
-                  />
+                  <figure>
+                    <img
+                      src="img/avatar_user.jpg"
+                      width="100"
+                      alt="Profile Avatar"
+                    />
+                  </figure>
+                  <figcaption><p>Nazwa użytkownika</p></figcaption>
                 </a>
                 <ul class="tags">
                   <li>
@@ -138,7 +141,7 @@
             <ul class="comment-section">
               <li class="comment user-comment">
                 <div class="info">
-                  <a href="#">Uzytkownik</a>
+                  <a href="#">Nazwa <br />użytkownika</a>
                   <span>4 godziny temu</span>
                 </div>
                 <a class="avatar" href="#">
@@ -152,13 +155,13 @@
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                   Suspendisee gravida sem sit amet molestie porttitor
                 </p>
-                <button class="button button-like">
+                <button class="button button-like button-color">
                   <i class="fa fa-heart heart-size"></i>
                 </button>
               </li>
               <li class="comment author-comment">
                 <div class="info">
-                  <a href="#">Uzytkownik</a>
+                  <a href="#">Nazwa użytkownika</a>
                   <span>3 godziny temu</span>
                 </div>
                 <a class="avatar" href="#">
@@ -179,7 +182,7 @@
               </li>
               <li class="comment user-comment">
                 <div class="info">
-                  <a href="#">Uzytkownik</a>
+                  <a href="#">Nazwa <br />użytkownika</a>
                   <span>1 godzinę temu</span>
                 </div>
 
@@ -200,7 +203,7 @@
               </li>
               <li class="comment author-comment">
                 <div class="info">
-                  <a href="#">Uzytkownik</a>
+                  <a href="#">Nazwa <br />użytkownika</a>
                   <span>1 godzinę temu</span>
                 </div>
                 <a class="avatar" href="#">
